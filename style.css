@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure background covers full viewport */
+    overflow: hidden; /* Prevent scrollbars from background */
+}
+
+.background-image {
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg"); /* Replace with your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center;
+    z-index: -1; /* Place behind other content */
+    filter: blur(2px); /* Optional blur */
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertically center content */
+    padding: 20px;
+    color: white; /* Text color for better contrast */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    color: black;
+}
+
+.search-bar i {
+    color: #555;
+    margin-left: 10px;
+}
+
+.bookmarks {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.bookmarks a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.bookmarks i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+i {
+
+    margin-bottom: 1em;
+  }
